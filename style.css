@@ -1,0 +1,101 @@
+
+
+.mainStories{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.storiesBig{
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    
+}
+
+.story1WU{
+    
+    font-family: sans-serif s;
+    background-color: black;
+}
+
+.storiesH1{
+    font-size: 48px;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+    
+}
+
+.stories2H1,
+.stories3H1{
+    font-size: 48px;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 5%;
+    
+    
+}
+
+.storiesP{
+    color: gray;
+    margin-left: 5%;
+    width: 80%;
+}
+
+.storiesActionP1{
+    color: white;
+    margin-left: 5%;
+    filter: saturate(200) hue-rotate(-140deg);
+    margin-top: 5%;
+    
+}
+
+.arrowImg{
+    filter: contrast(50);
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.storiesActionP2,
+.storiesActionP3{
+    color: black;
+    margin-left: 5%;
+    filter: saturate(200) hue-rotate(-140deg);
+    margin-top: 5%;
+    
+}
+
+.stories4{
+    background-image: url(/assets/stories/mobile/mountains.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.stories5{
+    background-image: url(/assets/stories/mobile/cityscapes.jpg);
+    height: 300px;
+    color: white;
+}
+
+
+.stories6{
+    background-image: url(/assets/stories/mobile/18-days-voyage.jpg);
+    height: 300px;
+    color: white;
+}
+
+
+.stories7{
+    background-image: url(/assets/stories/mobile/architecturals.jpg);
+    height: 300px;
+    color: white;
+
+}
+
+@media(min-width:1000px){
+
+}
