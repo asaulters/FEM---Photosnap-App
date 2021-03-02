@@ -5,32 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body>
+<div class="mainContainer">
 <header class="mainHeader">
-  Stories
-  Features
-  Pricing
+<nav>  
+  <div class="logo">
+    <img src="/assets/shared/desktop/logo-black.svg" alt="">
+  </div>
+  <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <button class="inviteNavButton">Get an invite</button>
+  </ul>
+  <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+</div>
+</nav>
 
-  <button class="inviteNavButton">Get an invite</button>
 </header>
 <main>
   <section class="mainStories">
     <div class="stories1 storiesBig">
-      <img src="/assets/home/mobile/create-and-share.jpg" alt="Lake View" class="storiesImg story1Img">
+      <!-- <img src="/assets/home/mobile/create-and-share.jpg" alt="Lake View" class="storiesImg story1Img"> -->
+      <div class="story1Img"></div>
       <section class="storyWriteup story1WU">
         <h1 class="storiesH1">Create and share your photo Stories</h1>
 
         <p class="storiesP">Photosnap is a platform for photographers and visual storytellers. We make it 
         easy to share photos, tell stories and connect with others.</p>
-        <p class="storiesActionP1">Get an Invite <a href="http://"><img src="/assets/shared/desktop/arrow.svg" class="arrowImg" alt="arrowImg"></a></p>
+        <p class="storiesActionP1">Get an Invite <a href="http://"><img src="/assets/shared/desktop/arrow-white.svg" class="arrowImg" alt="arrowImg"></a></p>
       </section>
     </div>
     <div class="stories2 storiesBig">
-      <img src="/assets/home/mobile/beautiful-stories.jpg" alt="Laptop" class="storiesImg story2Img">
-      <section class="storyWriteup">
+      <!-- <img src="/assets/home/mobile/beautiful-stories.jpg" alt="Laptop" class="storiesImg story2Img"> -->
+      <div class="story2Img"></div>
+      <section class="storyWriteup story2WU">
         <h1 class="stories2H1">Beautiful stories every time</h1>
         
         <p class="storiesP">We provide design templates to ensure your stories look terrific. Easily add 
@@ -38,42 +54,52 @@
         with everyone.</p>
       
 
-        <p class="storiesActionP2">View the stories<a href="http://"><img src="/assets/shared/desktop/arrow.svg" class="arrowImg" alt="arrowImg"></a></p>
+        <p class="storiesActionP2">View the stories<a href="http://"><img src="/assets/shared/desktop/arrow-black.svg" class="arrowImg" alt="arrowImg"></a></p>
       </section>
     </div>
     <div class="stories3 storiesBig">
-      <img src="/assets/home/mobile/designed-for-everyone.jpg" alt="Pic Taking" class="storiesImg story3Img">
-      <section class="storyWriteup">
+      <!-- <img src="/assets/home/mobile/designed-for-everyone.jpg" alt="Pic Taking" class="storiesImg story3Img"> -->
+      <div class="story3Img"></div>
+      <section class="storyWriteup story3WU">
         <h1 class="stories3H1">Designed for everyone</h1>
 
         <p class="storiesP">Photosnap can help you create stories that resonate with your audience.  Our 
         tool is designed for photographers of all levels, brands, businesses you name it. </p>
 
-        <p class="storiesActionP3">View the stories<a href="http://"><img src="/assets/shared/desktop/arrow.svg" class="arrowImg" alt="arrowImg"></a></p>
+        <p class="storiesActionP3">View the stories<a href="http://"><img src="/assets/shared/desktop/arrow-black.svg" class="arrowImg" alt="arrowImg"></a></p>
       </section>
     </div>
-    <div class="stories4 storiesSM">
-      <h3 class="storiesH3">The Mountains</h3>
-      <p class="storiesP">by John Appleseed</p>
-      <p class="storiesActionP">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow.svg" class="arrowImg" alt="arrowImg"></a></p>
-    </div>
-    <div class="stories5">
-      <h3 class="storiesH3">Sunset Cityscapes</h3>
-      <p class="storiesP">by Benjamin Cruz</p>
-      <p class="storiesActionP">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow.svg" class="arrowImg" alt="arrowImg"></a></p>
-    </div>
-    <div class="stories6">
-      <h3 class="storiesH3">18 Days Voyage</h3>
-      <p class="storiesP">by Alexei Borodin</p>
-      <p class="storiesActionP">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow.svg" class="arrowImg" alt="arrowImg"></a></p>
-    </div>
-    <div class="stories7">
-      <h3 class="storiesH3">Architecturals</h3>
-      <p class="storiesP">by Samantha Brooke</p>
-      <p class="storiesActionP">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow.svg" class="arrowImg" alt="arrow Img"></a></p>
-    </div>
+    <section class="storiesSM">
+      <div class="stories4 ">
+        <div class="storiesSMWU">
+          <h3 class="storiesH3">The Mountains</h3>
+          <p class="storiesP4">by John Appleseed</p>
+          <p class="storiesActionP4">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow-white.svg" class="arrowImg" alt="arrowImg"></a></p>
+        </div>
+      </div>
+      <div class="stories5">
+        <div class="storiesSMWU">
+          <h3 class="storiesH3">Sunset Cityscapes</h3>
+          <p class="storiesP4">by Benjamin Cruz</p>
+          <p class="storiesActionP4">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow-white.svg" class="arrowImg" alt="arrowImg"></a></p>
+        </div>
+      </div>
+      <div class="stories6">
+        <div class="storiesSMWU">
+          <h3 class="storiesH3">18 Days Voyage</h3>
+          <p class="storiesP4">by Alexei Borodin</p>
+          <p class="storiesActionP4">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow-white.svg" class="arrowImg" alt="arrowImg"></a></p>
+        </div>
+      </div>
+      <div class="stories7">
+        <div class="storiesSMWU">
+          <h3 class="storiesH3">Architecturals</h3>
+          <p class="storiesP4">by Samantha Brooke</p>
+          <p class="storiesActionP4">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow-white.svg" class="arrowImg" alt="arrow Img"></a></p>
+        </div>
+      </div>
   </section>
-  <section class="feturesDiv">
+  <section class="featuresDiv">
     <div class="feature1">
       <img src="/assets/features/desktop/responsive.svg" class="featureImg" alt="responsive feature" >
       <h4 class="featureH4">100% Responsive</h4>
@@ -97,15 +123,31 @@
     </div>
   </section>
 </main>
+</div>
 <footer>
-  Home
-  Stories
-  Features
-  Pricing
+  <div class="footerName"><img class="footerLogo" src="/assets/shared/desktop/logo-white.svg" alt="" fill="#0000ff"></div>
+  <div class="btn-group ">
+    <a href="#"><img src="/assets/shared/desktop/facebook.svg" alt="" class="socialBtns"></a>
+    <a href="#"><img src="/assets/shared/desktop/instagram.svg" alt="" class="socialBtns"></a>
+    <a href="#"><img src="/assets/shared/desktop/twitter.svg" alt="" class="socialBtns"></a>
+    <a href="#"><img src="/assets/shared/desktop/pinterest.svg" alt="" class="socialBtns"></a>
+    <a href="#"><img src="/assets/shared/desktop/youtube.svg" alt="" class="socialBtns"></a>
+  </div>
+  <ul class="footerLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Stories</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Pricing</a></li>
+  </ul>
 
-  Get an invite
 
-  Copyright 2019. All Rights Reserved
+  <a id="inviteNavButtonFooter">Get an invite<img src="/assets/shared/desktop/arrow-white.svg" class="arrowImg" alt="arrowImg"></a>
+
+  <div class="footerCopy"><p>Copyright 2019. All Rights Reserved</p></div>
+  
 </footer>
+
+<script src="/script.js"></script>
+
 </body>
 </html>

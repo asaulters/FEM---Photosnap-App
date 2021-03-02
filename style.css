@@ -1,20 +1,90 @@
+body{
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.mainContainer{
+    min-height: calc(100vh - 200px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    color: rgb(224, 224, 224);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    
+
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(224, 224, 224);
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+
+.inviteNavButton{
+    background-color: black;
+    color: white;
+    width: 50%;
+}
 
 .mainStories{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    margin:auto;
 }
 
 .storiesBig{
     display: grid;
     grid-template-rows: 1fr 1.5fr;
-    
+    width: 100%;
 }
 
 .story1WU{
     
     font-family: sans-serif s;
     background-color: black;
+}
+
+.story1Img{
+    background-image: url(/assets/home/mobile/create-and-share.jpg);
 }
 
 .storiesH1{
@@ -36,6 +106,12 @@
     
 }
 
+.story2Img{
+    background-image: url(/assets/home/mobile/beautiful-stories.jpg);
+}
+.story3Img{
+    background-image: url(/assets/home/mobile/designed-for-everyone.jpg);
+}
 .storiesP{
     color: gray;
     margin-left: 5%;
@@ -45,15 +121,18 @@
 .storiesActionP1{
     color: white;
     margin-left: 5%;
-    filter: saturate(200) hue-rotate(-140deg);
+    /* filter: saturate(200) hue-rotate(-140deg); */
     margin-top: 5%;
     
 }
 
 .arrowImg{
-    filter: contrast(50);
+    filter: contrast(100) saturate(200) hue-rotate(140deg);
+    background-color: transparent;
     margin-left: 5%;
-    margin-top: 10%;
+    /* margin-top: 10%; */
+    color: blue;
+    fill: #060;
 }
 
 .storiesActionP2,
@@ -61,41 +140,490 @@
     color: black;
     margin-left: 5%;
     filter: saturate(200) hue-rotate(-140deg);
-    margin-top: 5%;
+    /* margin-top: 5%; */
     
+}
+
+.storiesActionP4{
+    margin-top: -10px;
+}
+.storiesSM{
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(4, 375px);
 }
 
 .stories4{
     background-image: url(/assets/stories/mobile/mountains.jpg);
-    height: 300px;
+    
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    /* width: 100%; */
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    
+    
 }
 
 .stories5{
     background-image: url(/assets/stories/mobile/cityscapes.jpg);
-    height: 300px;
+    
     color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+   
+    display: grid;
+    grid-template-rows: 60% 40%;
 }
 
 
 .stories6{
     background-image: url(/assets/stories/mobile/18-days-voyage.jpg);
-    height: 300px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    
     color: white;
+    display: grid;
+    grid-template-rows: 60% 40%;
+
 }
 
 
 .stories7{
     background-image: url(/assets/stories/mobile/architecturals.jpg);
-    height: 300px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    
+    color: white;
+    display: grid;
+    grid-template-rows: 60% 40%;
+
+}
+
+.storiesSMWU{
+    grid-row: 2/3;
+    margin-left: 5%;
+    color: white;
+    font-weight: 300;
+    margin-bottom: -3%;
+}
+.storiesP4{
+    color: white;
+    padding-left: 5%;
+    width: 80%;
+    font-weight: 800;
+    padding-bottom: 3%;
+    border-bottom: gray 1px solid;
+}
+.storiesActionP4{
+    font-weight: 700;
+}
+
+.featuresDiv{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.feature2{
+    margin-top: 20%;
+}
+
+.feature3{
+    margin-top: 20%;
+    margin-bottom: 25%;
+}
+
+.featureH4{
+    font-weight: 800;
+}
+
+footer{
+    padding-top: 30px;
+    height: 400px;
+    background-color: #000000;
+    text-align: center;
+}
+
+#inviteNavButtonFooter {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
     color: white;
 
 }
 
-@media(min-width:1000px){
+.footerName{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 
+.footerLinks li {
+    list-style: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footerLinks a {
+    list-style: none;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.footerCopy{
+    margin-top: 10%;
+    color: white;
+}
+
+.btn-group{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width:40%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+.socialBtns{
+    margin-left: 30%;
+    /* padding-left: 3%; */
+    
+}
+
+/* NAV */
+@media screen and (max-width: 900px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+            right: 0;
+            height: 300px;
+            top: 8vh;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+/* normal Media Qs */
+
+@media(min-width:500px){
+    .mainStories{
+        display: grid;
+        grid-template-rows: 600px 500px 500px;
+        
+    }
+
+    .stories1{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-row: 1/2;
+        grid-template-rows: 100%;
+    }
+
+    .story1WU{
+        grid-column: 1/2;
+        grid-row: 1/2;
+       
+       
+    }
+
+    .story1Img{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url(/assets/home/tablet/create-and-share.jpg);
+    }
+
+    .stories2{
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 100%;
+        grid-template-rows: 100%;
+    }
+
+    .story2Img{
+        background-image: url(/assets/home/tablet/beautiful-stories.jpg);
+        grid-column: 1/2;
+        /* background-position: center; */
+        height: 100%;
+        grid-row: 1/2;
+        background-repeat: no-repeat;
+    }
+    .story2WU{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .stories3{
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 100%;
+    }
+
+    .story3WU{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .story3Img{
+        grid-column: 2/3;
+        background-image: url(/assets/home/tablet/designed-for-everyone.jpg);
+    }
+
+    .storiesSM{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 375px 375px;
+    }
+
+    .stories4{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .stories5{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .stories6{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .stories7{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .featuresDiv{
+        width: 75%;
+    }
+    .featureImg{
+        margin-bottom: 10%;
+    }
+    .featureH4{
+        margin-bottom: 5%;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        height: 200px;
+    }
+    .footerName{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .footerLinks{
+        
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 60px;
+        text-decoration: none;
+        margin-left: 10px;
+        word-spacing: 5%;
+    }
+    
+    .btn-group{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: space-between;
+        width:50%;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+    .inviteNavButtonFooter{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .footerCopy{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+}
+
+
+
+@media(min-width:920px){
+
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+
+    .inviteNavButton{
+        background-color: black;
+        color: white;
+        width: 20%;
+    }
+
+    .stories1{
+        grid-template-columns: 40% 60%;
+    }
+    .story1Img{
+        background-image: url(/assets/home/desktop/create-and-share.jpg);
+        background-size: cover;
+    }
+    .stories2{
+        grid-template-columns: 60% 40%;
+    }
+    .story2Img{
+        background-image: url(/assets/home/desktop/beautiful-stories.jpg);
+        background-size: cover;
+    }
+    .stories3{
+        grid-template-columns: 40% 60%;
+    }
+    .story3Img{
+        background-image: url(/assets/home/desktop/designed-for-everyone.jpg);
+        background-size: cover;
+    }
+
+    .storiesSM {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 375px;
+        height: 100%;
+        
+    }
+    .stories4{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .stories5{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .stories6{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .stories7{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    .featuresDiv{
+        display: flex;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 500px;
+    }
+    .feature1{
+        width: 30%;
+        margin-top: initial;
+    }
+    .feature2{
+        width: 30%;
+        margin-top: 5%;
+    }
+    .feature3{
+        width: 30%;
+        margin: initial;
+        
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        height: 250px;
+    }
+
+    .footerLinks{
+        
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 60px;
+        text-decoration: none;
+        margin-left: 10px;
+        /* word-spacing: 2%; */
+    }
+    
+    .btn-group{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: space-between;
+        width:50%;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+
+}
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
 }
