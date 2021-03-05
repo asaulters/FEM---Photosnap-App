@@ -1,3 +1,8 @@
+/* mobile -> tablet -> desktop
+Home->stories->features->pricing
+ */
+
+
 body{
     width: 100%;
     box-sizing: border-box;
@@ -8,11 +13,11 @@ body{
 }
 
 
-/* 
+/* ---------------------------------------
 ------------------------------------------------------
 Shared Nav / footer---------------------------
 ------------------------------------------------------
-*/
+---------------------------------------*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -131,11 +136,11 @@ nav {
     
 }
 
-/* 
+/* ---------------------------------------
 ----------------------------------------------
 home-------------------------------------------
 -------------------------------------------------
-*/
+---------------------------------------*/
 .mainStories{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -330,11 +335,11 @@ footer{
     text-align: center;
 }
 
-/* 
+/* ---------------------------------------
 --------------------------------------------
 Feature Page---------------------------
 -------------------------------------------
-*/
+---------------------------------------*/
 .feature-Top{
     display: grid;
     grid-template-rows: 250px 250px;
@@ -391,11 +396,11 @@ Feature Page---------------------------
     margin: auto;
 }
 
-/* 
+/* ---------------------------------------
 -----------------------------------------------
 Stories Page---------------------------
 -----------------------------------------------
-*/
+---------------------------------------*/
 .stories-top{
     display: grid;
     grid-template-rows: 400px min-content;
@@ -562,6 +567,248 @@ Stories Page---------------------------
     color: rgb(14, 14, 11);
 }
 
+/* ---------------------------------------
+//////////////////
+Pricing
+???????????????????? */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* end toggle */
+
+.pricing-top{
+    display: grid;
+    grid-template-rows: 300px min-content;
+}
+.pricing-topPic{
+    grid-row: 1/2;
+    background-image: url(/assets/pricing/mobile/hero.jpg);
+    background-size: cover;
+}
+.pricing-topWU{
+    grid-row: 2/3;
+    background-color: black;
+    
+    padding: 20% 10%;
+}
+.pricing-topH1{
+    font-size: 40px;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: rgb(230, 224, 224);
+}
+.pricing-pTop{
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    line-height: 25px;
+
+}
+
+.pricingToggler{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr;
+    margin: 20px;
+    
+    text-align: center;
+
+}
+.pricing-h4-m{
+    grid-column: 1/2;
+    padding-left: 30px;
+
+}
+.pricing-toggleSwitch{
+    grid-column: 2/3;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.pricing-h4-y{
+    grid-column: 3/4;
+}
+.pricing-options{
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+}
+.pricing-Option1{
+    margin: 5%;
+    text-align: center;
+    background-color: rgb(230, 227, 227);
+    grid-row: 1/2;
+    padding: 5%;
+}
+.pricing-optionPriceBlack{
+    color: black;
+    font-size: 50px;
+    font-weight: 800;
+    margin: auto;
+}
+
+.pricing-Option2{
+    margin: 5%;
+    text-align: center;
+    background-color: black;
+    grid-row: 2/3;
+    padding: 5%;
+}
+.pricing-priceTitleWhite,
+.pricing-optionPriceWhite{
+    color: white;
+}
+.pricing-optionPriceWhite{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    margin: auto;
+}
+
+
+.pricing-pricePWhite,
+.pricing-pricePWhite{
+    color: gray;
+}
+
+.pricing-Option3{
+    margin: 5%;
+    text-align: center;
+    background-color: rgb(230, 227, 227);
+    grid-row: 3/4;
+    padding: 5%;
+}
+
+.pricing-optionButtonBlack{
+    width: 70%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+}
+.pricing-optionButtonWhite{
+    width: 70%;
+    height: 40px;
+    background-color: rgb(224, 219, 219);
+    color: black;
+    letter-spacing: 3px;
+}
+
+.pricing-compareH1{
+    display: none;
+}
+
+.pricing-featH2{
+    margin-left: 5%;
+    border-bottom: 1px gray solid;
+    width: 90%;
+    padding-bottom: 5%;
+}
+
+.pricing-features1,
+.pricing-features2,
+.pricing-features3,
+.pricing-features4,
+.pricing-features5,
+.pricing-features6,
+.pricing-features7,
+.pricing-features8{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30px 15px 30px;
+    width: 90%;
+    grid-gap: 10px;
+    margin: auto;
+    border-bottom: gray 1px solid;
+}
+.pricing-featrureH3{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    
+}
+.pricing-feat-pro{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.pricing-feat-pro{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.pricing-feat-bus{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.pricing-feat-check1{
+    grid-column: 1/2;
+    grid-row: 3/4; 
+}
+.pricing-feat-check2{
+    grid-column: 2/3;
+    grid-row: 3/4; 
+}
+.pricing-feat-check3{
+    grid-column: 3/4;
+    grid-row: 3/4; 
+}
+
+
 
 
 
@@ -605,11 +852,11 @@ NAV
     transform: translateX(0%);
 }
 
-/* 
---------------------------------------------------------------------
+/* ---------------------------------------
+------------------------------------------------------------
 normal Media Qs---------------------------
--------------------------------------------------------------------
- */
+--------------------------------------------------------
+ ---------------------------------------*/
 
 @media(min-width:500px){
 
@@ -824,9 +1071,9 @@ normal Media Qs---------------------------
     padding-top:25%;
 }
 
-/* 
+/* ---------------------------------------
 ------------------------------------------------------
-Stories
+Stories---------------------------------------
 ------------------------------------------------------ */
 .stories-top{
     display: grid;
@@ -999,11 +1246,11 @@ Stories
         grid-row: 2/3;
     }
 
-/* 
-
+/* ---------------------------------------
+---------------------------------------
 End shared 
-
-*/
+---------------------------------------
+---------------------------------------*/
 /* ------------------------------------------------------
 home page ------------------------------------------------*/
 
@@ -1079,6 +1326,7 @@ home page ------------------------------------------------*/
     
     /* ------------------------------------------------------
     Features page---------------------------
+    ---------------------------------------
     ------------------------------------------------------ */
 
     .feature-Top{
@@ -1148,9 +1396,9 @@ home page ------------------------------------------------*/
         padding-left: 30%;
     }
 
-/* 
+/* ---------------------------------------
 ------------------------------------------------------
-Stories
+Stories---------------------------------------
 ------------------------------------------------------ */
 .stories-top{
     display: grid;
