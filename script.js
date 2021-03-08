@@ -1,12 +1,15 @@
 //Vars
 let toggleBtn = document.querySelector('.toggleSwitch');
 let bacisPlan = document.querySelector('.pricing-basicPlanPrice');
-let monthlyPlan =document.querySelectorAll('.pricing-monthly');
-let yearlyPlan =document.querySelectorAll('.pricing-yearly');
+let monthlyPlan1 =document.querySelector('.pm1');
+let yearlyPlan1 =document.querySelector('.py1');
+let monthlyPlan2 =document.querySelector('.pm2');
+let yearlyPlan2 =document.querySelector('.py2');
+let monthlyPlan3 =document.querySelector('.pm3');
+let yearlyPlan3 =document.querySelector('.py3');
 console.log(toggleBtn)
 console.log(bacisPlan)
-console.log(monthlyPlan)
-console.log(yearlyPlan)
+
 
 //Nav
 const navSlide = () =>{
@@ -33,12 +36,30 @@ const navSlide = () =>{
 }
 navSlide()
 
-function togglePlans() {
-    if (toggleBtn.value == "Off"){
-        console.log(toggleBtn)
+function toggle(button) {
+    if (button.value == "OFF"){
+        button.value="ON";
+        monthlyPlan1.style.display = "none";
+        yearlyPlan1.style.display = "initial";
+        monthlyPlan2.style.display = "none";
+        yearlyPlan2.style.display = "initial";
+        monthlyPlan3.style.display = "none";
+        yearlyPlan3.style.display = "initial";
+        console.log("Now on");
 
+    } else if (button.value == "ON" )  {
+        button.value="OFF"
+        monthlyPlan1.style.display = "initial";
+        yearlyPlan1.style.display = "none";
+        monthlyPlan2.style.display = "initial";
+        yearlyPlan2.style.display = "none";
+        monthlyPlan3.style.display = "initial";
+        yearlyPlan3.style.display = "none";
+        console.log("Now off")
     }
+
+
 }
 
-toggleBtn.addEventListener('click', togglePlans);
+toggleBtn.addEventListener('click', toggle);
 

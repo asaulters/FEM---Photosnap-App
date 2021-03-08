@@ -673,6 +673,11 @@ Pricing
     text-align: center;
 
 }
+
+.pricing-yearly{
+    display: none;
+}
+
 .pricing-h4-m{
     grid-column: 1/2;
     padding-left: 30px;
@@ -755,12 +760,26 @@ Pricing
     display: none;
 }
 
-.pricing-featH2{
+.pricing-featuresHead{
+    display: grid;
+
+
+}
+
+.pricing-featH3{
     margin-left: 5%;
     border-bottom: 1px gray solid;
     width: 90%;
     padding-bottom: 5%;
+    
 }
+.pricing-feat-head-bas,
+.pricing-feat-head-pro,
+.pricing-feat-head-bus{
+    display: none;
+}
+
+
 
 .pricing-features1,
 .pricing-features2,
@@ -774,13 +793,14 @@ Pricing
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 30px 15px 30px;
     width: 90%;
-    grid-gap: 10px;
+    grid-gap: 15px;
     margin: auto;
     border-bottom: gray 1px solid;
 }
-.pricing-featrureH3{
+.pricing-featureH3{
     grid-column: 1/4;
     grid-row: 1/2;
+
     
 }
 .pricing-feat-pro{
@@ -1171,7 +1191,154 @@ Stories---------------------------------------
     grid-column: 2/3;
 }
 
+/*----------------------------------------
+Pricing----------------------------------------
+----------------------------------------*/
+.pricing-top{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    width: 100%;
+}
 
+.pricing-topPic{
+    grid-column: 2/3;
+    background-image: url(/assets/pricing/tablet/hero.jpg);
+    
+    grid-row: 1/2;
+}
+.pricing-topWU{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.pricingToggler{
+    margin-top: 15%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pricing-options{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    /* grid-gap: 10px; */
+}
+
+.pricing-Option1,
+.pricing-Option2,
+.pricing-Option3{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 80% 20%;
+    padding: 5%;
+    text-align: left;
+}
+
+.pricing-priceTitleBlack,
+.pricing-priceTitleWhite{
+    font-size: 30px;
+}
+
+.pricing-pricePWBlack,
+.pricing-pricePWhite{
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.priceing-btn{
+    font-weight: 800;
+}
+.pricing-wu{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 60%;
+}
+.pricing-price{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.priceing-btn{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.pricing-compareH1{
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    /* padding-top:10%; */
+}
+
+.pricing-featuresHead{
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr 1fr;
+    border-bottom: 1px gray solid;
+    width: 91%;
+    margin: auto;
+}
+.pricing-featH3{
+    grid-column: 1/2;
+    border-bottom: none;
+}
+.pricing-feat-head-bas{
+    grid-column: 2/3;
+    display: initial;
+}
+.pricing-feat-head-pro{
+    grid-column: 3/4;
+    display: initial;
+}
+.pricing-feat-head-bus{
+    grid-column: 4/5;
+    display: initial;
+}
+
+.pricing-features1,
+.pricing-features2,
+.pricing-features3,
+.pricing-features4,
+.pricing-features5,
+.pricing-features6,
+.pricing-features7,
+.pricing-features8{
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    width: 90%;
+    grid-gap: 15px;
+    margin: auto;
+    border-bottom: gray 1px solid;
+}
+.pricing-featureH3{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.pricing-feat-basic{
+    display: none;
+}
+.pricing-feat-pro{
+    display: none;
+}
+.pricing-feat-bus{
+    display: none;
+}
+.pricing-feat-check1{
+    padding-top: 20%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.pricing-feat-check2{
+    padding-top: 20%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.pricing-feat-check3{
+    padding-top: 20%;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
 
 
 } /* end of tablet view */
@@ -1523,7 +1690,107 @@ Stories---------------------------------------
     grid-template-rows: 65% 35%;
 }
 
+/* ---------------------------------------------
+Pricing ----------------------------------------
+---------------------------------------------*/
+
+.pricing-top{
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
+
+.pricing-topPic{
+    grid-column: 2/3;
+    background-image: url(/assets/pricing/desktop/hero.jpg);
+    background-size: cover;
+}
+.pricing-topWU{
+    grid-column: 1/2;
+}
+
+.pricingToggler{
+    margin: 5%  auto;
+    width: 30%;
+}
+
+
+
+.pricing-options{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    margin: auto;
+}
+
+.pricing-Option1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.pricing-Option2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+}
+.pricing-Option3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.pricing-wu{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
+    margin: auto;
+    width: 85%;
+}
+.pricing-price{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin: auto;
+}
+.priceing-btn{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 80%;
+    margin: auto;
+}
+
+.pricing-priceTitleBlack,
+.pricing-priceTitleWhite{
+    font-size: 30px;
+    font-weight: 900;
+}
+.pricing-pricePWhite,
+.pricing-pricePWBlack{
+    font-size: 20px;
+}
+
+.feature-Beta{
+    margin-top: 10%;
+}
+
+.pricing-comparing{
+    width: 60%;
+    margin: auto;
+}
+
+} 
+/* end desktop */
+
+
+
 
 
 @keyframes navLinkFade{
@@ -1535,6 +1802,7 @@ Stories---------------------------------------
         opacity: 1;
         transform: translateX(0px);
     }
+    
 }
 
 .toggle .line1{

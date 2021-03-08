@@ -3,74 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body>
+  <header class="mainHeader">
+    <nav>  
+      <div class="logo">
+        <img src="/assets/shared/desktop/logo-black.svg" alt="">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+          <button class="inviteNavButton">Get an invite</button>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+    </div>
+    </nav>
+  </header>  
+<section class="pricing-main-container">  
+  <div class="pricing-top">
+    <div class="pricing-topPic"></div>
+    <div class="pricing-topWU">
+      <h1 class="pricing-topH1">Pricing</h1>
 
-  Stories
-  Features
-  Pricing
+      <p class="pricing-pTop">Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.</p>
 
-  Get an invite
+    </div>
+  </div>
+  <section class="pricingToggler">
+    <h4 class="pricing-h4-m">Monthly</h4>
+    <div class="pricing-toggleSwitch">
+      <label class="switch">
+        <input type="checkbox" onclick="toggle(this)" class="toggleSwitch" value="OFF">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <h4 class="pricing-h4-y">Yearly</h4>  
+  </section>
+  <section class="pricing-options">
 
-  Pricing
+    <div class="pricing-Option1">
+      <div class="pricing-wu">
+        <h3 class="pricing-priceTitleBlack">Basic</h3>
+        <p class="pricing-pricePWBlack">Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+      </div>
+      <div class="pricing-basicPlanPrice pricing-price">
+        <div class="pricing-monthly pm1">
+          <section class="pricing-optionPriceBlack">$19.00</section> <p class="pricing-pricePBlack">per month</p>
+        </div>
+        <div class="pricing-yearly py1">
+          <section class="pricing-optionPriceBlack">$190.00</section> <p class="pricing-pricePBlack">per year</p>
+        </div>
+      </div>
+      <button class="pricing-optionButtonBlack priceing-btn">Pick Plan</button>
+    </div>
 
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
-
-  Monthly
-  Yearly
-
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
-
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
-
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
+    <div class="pricing-Option2">
+      <div class="pricing-wu">
+        <h3 class="pricing-priceTitleWhite">Pro</h3>
+        <p class="pricing-pricePWhite">More advanced features available. Recommended for photography veterans and professionals.</p>
+      </div>
+      <div class="pricing-price">
+        <div class="pricing-monthly pm2">
+          <section class="pricing-optionPriceWhite">$19.00</section> <p class="pricing-pricePWhite">per month</p>
+        </div>
+        <div class="pricing-yearly py2">
+          <section class="pricing-optionPriceWhite">$190.00</section> <p class="pricing-pricePWhite">per year</p>
+        </div>
+      </div>
+      <button class="pricing-optionButtonWhite priceing-btn">Pick Plan</button>
+      
+    </div>
   
-  Get an invite
+    <div class="pricing-Option3">
+      <div class="pricing-wu">
+        <h3 class="pricing-priceTitleBlack pricing-t">Business</h3>
+        <p class="pricing-pricePWBlack">Additional features available such as more detailed metrics. Recommended for business owners.</p>
+      </div>
+      <div class="pricing-price">
+        <div class="pricing-monthly pm3">
+          <section class="pricing-optionPriceBlack">$99.00</section> <p class="pricing-pricePBlack">per month</p>
+        </div>
+        <div class="pricing-yearly py3">
+          <section class="pricing-optionPriceBlack">$990.00</section> <p class="pricing-pricePBlack">per year</p>
+        </div>
+      </div>
+      <button class="pricing-optionButtonBlack priceing-btn">Pick Plan</button>
+    </div>
 
-  Home
-  Stories
-  Features
-  Pricing
+  </section>
 
-  Get an invite
 
-  Copyright 2019. All Rights Reserved
+  <section class="pricing-comparing">
+  <h1 class="pricing-compareH1">Compare</h1>
+  <div class="pricing-featuresHead">
+    <h3 class="pricing-featH3">The Features</h3>
+    <h3 class="pricing-feat-head-bas">Basic</h3>
+    <h3 class="pricing-feat-head-pro">Pro</h3>
+    <h3 class="pricing-feat-head-bus">Business</h3>
+
+  </div>
+
+
+  <div class="pricing-features1">
+    <h3 class="pricing-featureH3">Unlimited Story Posting</h3>
+    <div class="pricing-feat-basic">Basic</div>
+    <div class="pricing-feat-pro">Pro</div>
+    <div class="pricing-feat-bus">Business</div>
+    <div class="pricing-feat-check1"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+    <div class="pricing-feat-check2"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+    <div class="pricing-feat-check3"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+  </div>
+  <div class="pricing-features2">
+    <h3 class="pricing-featureH3">Unlimited Photo Upload</h3>
+    <div class="pricing-feat-basic">Basic</div>
+    <div class="pricing-feat-pro">Pro</div>
+    <div class="pricing-feat-bus">Business</div>
+    <div class="pricing-feat-check1"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+    <div class="pricing-feat-check2"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+    <div class="pricing-feat-check3"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+  </div>
+  <div class="pricing-features3">
+    <h3 class="pricing-featureH3">Embedding Custom Content</h3>
+    <div class="pricing-feat-basic">Basic</div>
+    <div class="pricing-feat-pro">Pro</div>
+    <div class="pricing-feat-bus">Business</div>
+    <div class="pricing-feat-check2"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+    <div class="pricing-feat-check3"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+  </div>  
+  <div class="pricing-features4">
+    <h3 class="pricing-featureH3">Customize Metadata</h3>
+    <div class="pricing-feat-basic">Basic</div>
+    <div class="pricing-feat-pro">Pro</div>
+    <div class="pricing-feat-bus">Business</div>
+    <div class="pricing-feat-check2"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+    <div class="pricing-feat-check3"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+  </div>  
+  <div class="pricing-features5">
+    <h3 class="pricing-featureH3">Advanced Metrics</h3>
+    <div class="pricing-feat-basic">Basic</div>
+    <div class="pricing-feat-pro">Pro</div>
+    <div class="pricing-feat-bus">Business</div>
+    <div class="pricing-feat-check3"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+  </div>  
+  <div class="pricing-features6">
+    <h3 class="pricing-featureH3">Photo Downloads</h3>
+    <div class="pricing-feat-basic">Basic</div>
+    <div class="pricing-feat-pro">Pro</div>
+    <div class="pricing-feat-bus">Business</div>
+    <div class="pricing-feat-check3"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+  </div>  
+  <div class="pricing-features7">
+    <h3 class="pricing-featureH3">Search Engine Indexing</h3>
+    <div class="pricing-feat-basic">Basic</div>
+    <div class="pricing-feat-pro">Pro</div>
+    <div class="pricing-feat-bus">Business</div>
+    <div class="pricing-feat-check3"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+  </div>  
+  <div class="pricing-features8">
+    <h3 class="pricing-featureH3">Custom Analytics</h3>
+    <div class="pricing-feat-basic">Basic</div>
+    <div class="pricing-feat-pro">Pro</div>
+    <div class="pricing-feat-bus">Business</div>
+
+    <div class="pricing-feat-check3"><img src="/assets/pricing/desktop/check.svg" alt="check"></div>
+  </div>
+
+</section>
+
+  <section class="feature-Beta">
+    <h1 class="feature-BetaH1">We're in Beta. Get your invite today!</h1>
+    
+    <p class="featureAction">Read Story<a href="http://"><img src="/assets/shared/desktop/arrow-white.svg" class="arrowImg" alt="arrowImg"></a></p>
+  </section>
+</main>
+</section>  
+<footer>
+  <div class="footerName"><img class="footerLogo" src="/assets/shared/desktop/logo-white.svg" alt="" fill="#0000ff"></div>
+  <div class="btn-group ">
+    <a href="#"><img src="/assets/shared/desktop/facebook.svg" alt="" class="socialBtns"></a>
+    <a href="#"><img src="/assets/shared/desktop/instagram.svg" alt="" class="socialBtns"></a>
+    <a href="#"><img src="/assets/shared/desktop/twitter.svg" alt="" class="socialBtns"></a>
+    <a href="#"><img src="/assets/shared/desktop/pinterest.svg" alt="" class="socialBtns"></a>
+    <a href="#"><img src="/assets/shared/desktop/youtube.svg" alt="" class="socialBtns"></a>
+  </div>
+  <ul class="footerLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stories.html">Stories</a></li>
+    <li><a href="features.html">Features</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+  </ul>
+
+
+  <a id="inviteNavButtonFooter">Get an invite<img src="/assets/shared/desktop/arrow-white.svg" class="arrowImg" alt="arrowImg"></a>
+
+  <div class="footerCopy"><p>Copyright 2019. All Rights Reserved</p></div>
+  
+</footer>
+
+<script src="/script.js"></script>
 
 </body>
 </html>
