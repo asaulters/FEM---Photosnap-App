@@ -1445,7 +1445,7 @@ home page ------------------------------------------------*/
 
     .storiesSM {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 25%);
         grid-template-rows: 375px;
         height: 100%;
         
@@ -1453,18 +1453,22 @@ home page ------------------------------------------------*/
     .stories4{
         grid-column: 1/2;
         grid-row: 1/2;
+        background-size: cover;
     }
     .stories5{
         grid-column: 2/3;
         grid-row: 1/2;
+        background-size: cover;
     }
     .stories6{
         grid-column: 3/4;
         grid-row: 1/2;
+        background-size: cover;
     }
     .stories7{
         grid-column: 4/5;
         grid-row: 1/2;
+        background-size: cover;
     }
 
     .featuresDiv{
@@ -1789,6 +1793,15 @@ Pricing ----------------------------------------
 } 
 /* end desktop */
 
+/* -----------------------------------------------------------
+larger desktop-----------------------------------------------------------
+-----------------------------------------------------------*/
+@media(min-width:1350){
+
+
+
+
+}
 
 
 

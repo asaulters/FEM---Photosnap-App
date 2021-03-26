@@ -7,8 +7,8 @@ let monthlyPlan2 =document.querySelector('.pm2');
 let yearlyPlan2 =document.querySelector('.py2');
 let monthlyPlan3 =document.querySelector('.pm3');
 let yearlyPlan3 =document.querySelector('.py3');
-console.log(toggleBtn)
-console.log(bacisPlan)
+// console.log(toggleBtn)
+// console.log(bacisPlan)
 
 
 //Nav
@@ -45,7 +45,7 @@ function toggle(button) {
         yearlyPlan2.style.display = "initial";
         monthlyPlan3.style.display = "none";
         yearlyPlan3.style.display = "initial";
-        console.log("Now on");
+        // console.log("Now on");
 
     } else if (button.value == "ON" )  {
         button.value="OFF"
@@ -55,11 +55,11 @@ function toggle(button) {
         yearlyPlan2.style.display = "none";
         monthlyPlan3.style.display = "initial";
         yearlyPlan3.style.display = "none";
-        console.log("Now off")
+        // console.log("Now off")
     }
 
 
 }
 
-toggleBtn.addEventListener('click', toggle);
+// toggleBtn.addEventListener('click', toggle);
 
