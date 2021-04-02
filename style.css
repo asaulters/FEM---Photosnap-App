@@ -9,7 +9,7 @@ body{
 }
 
 .mainContainer{
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 1200px);
 }
 
 
@@ -82,7 +82,20 @@ nav {
     text-align: center;
     margin-left: 8%;
     margin-top: 10%;
+    width: 60%;
+    /* border: none; */
 }
+
+footer{
+    height: 200%;
+    background-color: black;
+    margin-bottom: -15%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+
 
 .footerLinks{
     display: flex;
@@ -119,21 +132,33 @@ nav {
 .footerCopy{
     margin-top: 10%;
     color: white;
+    padding-bottom: 10%;
 }
 
 .btn-group{
     background-color: black;
     display: flex;
     justify-content: space-between;
-    width:40%;
+    width:50%;
     margin-bottom: 5%;
     margin-top: 3%;
-    margin-left: 30%;
+    margin-left: 0%;
 }
 .socialBtns{
     margin-left: 30%;
     /* padding-left: 3%; */
     
+}
+
+a {
+    color:#000000;
+    }
+
+button:hover,
+a:hover,
+.storiesActionP1:hover,
+#inviteNavButtonFooter:hover{
+    color: orange;
 }
 
 /* ---------------------------------------
@@ -197,11 +222,18 @@ home-------------------------------------------
 
 .storiesActionP1{
     color: white;
+    background-color: black;
     margin-left: 5%;
     /* filter: saturate(200) hue-rotate(-140deg); */
     margin-top: 5%;
+    width: 300px;
+    border: none;
+    margin-bottom: 10%;
     
 }
+/* .storiesActionPP{
+    color: white;
+} */
 
 .arrowImg{
     filter: contrast(100) saturate(200) hue-rotate(140deg);
@@ -215,14 +247,22 @@ home-------------------------------------------
 .storiesActionP2,
 .storiesActionP3{
     color: black;
+    background-color: white;
+    width: 200px;
+    border: none;
     margin-left: 5%;
     filter: saturate(200) hue-rotate(-140deg);
     /* margin-top: 5%; */
-    
+    margin-bottom: 10%;
 }
 
 .storiesActionP4{
     margin-top: -10px;
+    width: 40%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    /* margin-left: -5%; */
 }
 .storiesSM{
     display: grid;
@@ -240,8 +280,8 @@ home-------------------------------------------
     
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
-    /* width: 100%; */
+    background-size: cover;
+    width: 100%;
     color: white;
     display: grid;
     grid-template-rows: 60% 40%;
@@ -251,11 +291,11 @@ home-------------------------------------------
 
 .stories5{
     background-image: url(/assets/stories/mobile/cityscapes.jpg);
-    
+    width: 100%;
     color: white;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
    
     display: grid;
     grid-template-rows: 60% 40%;
@@ -264,10 +304,10 @@ home-------------------------------------------
 
 .stories6{
     background-image: url(/assets/stories/mobile/18-days-voyage.jpg);
-    
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     
     color: white;
     display: grid;
@@ -278,10 +318,10 @@ home-------------------------------------------
 
 .stories7{
     background-image: url(/assets/stories/mobile/architecturals.jpg);
-    
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     
     color: white;
     display: grid;
@@ -328,12 +368,7 @@ home-------------------------------------------
     font-weight: 800;
 }
 
-footer{
-    padding-top: 30px;
-    height: 400px;
-    background-color: #000000;
-    text-align: center;
-}
+
 
 /* ---------------------------------------
 --------------------------------------------
@@ -878,7 +913,7 @@ normal Media Qs---------------------------
 --------------------------------------------------------
  ---------------------------------------*/
 
-@media(min-width:500px){
+@media(min-width:600px){
 
     /* Shared styles */
     footer{
@@ -924,7 +959,10 @@ normal Media Qs---------------------------
         color: gray;
     }
     /* end shared */
-    /* Index */
+    /* ------------------------------------------
+    -----------------------------------------
+   Index  -----------------------------------------
+    --------------------------------------------*/
     .mainStories{
         display: grid;
         grid-template-rows: 600px 500px 500px;
@@ -990,7 +1028,8 @@ normal Media Qs---------------------------
 
     .storiesSM{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 375px 375px;
     }
 
@@ -1009,6 +1048,10 @@ normal Media Qs---------------------------
     .stories7{
         grid-column: 2/3;
         grid-row: 2/3;
+    }
+    .storiesActionP4{
+        width: 100%;
+        padding-right: 20%;
     }
 
     .featuresDiv{
